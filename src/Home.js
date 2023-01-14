@@ -12,7 +12,7 @@ const Home = () => {
         if (!response.ok) {
           throw Error("Failed to fetch data");
         }
-        response.json();
+        return response.json();
         })
       .then(data => {
         setBlogs(data);
@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div className="home">
       {isPending && <div className="loading">Loading blogs...</div>}
-      {isError && <div className="error">{ error }</div>}
+      {error && <div className="error">{ error }</div>}
       {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
     </div>
   );
