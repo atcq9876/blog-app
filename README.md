@@ -1,4 +1,4 @@
-#blog-app
+# blog-app
 
 A blog app made using React, following a [series of tutorials by Net Ninja](https://youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d).
 
